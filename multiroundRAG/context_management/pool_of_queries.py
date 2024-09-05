@@ -19,7 +19,7 @@ class PoolOfQueries():
         chunks: List[dict] = None,
         chunks_cached: List[dict] = None,
         unanswerable: List[dict] = None,
-        log_level: int = logging.CRITICAL + 1, #Set to 20 if need logging
+        verbose: bool = False, #Set to 20 if need logging
         **kwargs
     ):
         self.embedder = embedding_function
@@ -35,7 +35,10 @@ class PoolOfQueries():
 
         # Setup logging
         self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(log_level)
+        if verbose:
+            self.logger.setLevel(logging.INFO)
+        else:
+            self.logger.setLevel(logging.INFO - 1)
         if not self.logger.handlers:
             handler = logging.StreamHandler()
             formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
