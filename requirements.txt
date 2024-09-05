@@ -5,6 +5,7 @@ groq
 huggingface_hub[hf_transfer]
 ipywidgets
 instructor
+logging
 numpy
 nltk
 openai

@@ -1,4 +1,4 @@
-# “AgentRAG: An Agent-Enhanced Retrieval-Augmented Generation Pipeline for multiround conversation
+# “MultiRound AgentRAG: An Agent-Enhanced Retrieval-Augmented Generation Pipeline for multiround conversation
 
 (This version is usuable but the prompts for the agents are not yet optimized, behavior of the system might not be stable)
 
@@ -23,4 +23,4 @@ The implementation of this RAG system is designed for multi-round conversation i
 
 However, as to date, no Miltihop Miltiround RAG benchmarks exists
 
-Once such a benchmark gets published, the system will be benchmarked
+Once such a benchmark gets published, the system will be benchmarked against it.

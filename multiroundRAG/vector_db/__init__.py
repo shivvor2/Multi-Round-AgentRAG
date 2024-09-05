@@ -1,0 +1,1 @@
+from milvus_schema import milvus_schema
