@@ -22,11 +22,14 @@ pool_of_queries = PoolOfQueries(embedding_function = embedding_function,
                                 verbose = poq_verbose)
 ```
 
-The arguements
-
 Then during the conversation:
 
-- Pass in the  
+- Pass in the message to update the context, and invoke it to obtain the current retrieved chunks:
+
+```python
+pool_of_queries.update(message_history)
+current_context_msg = pool_of_queries.current_context_msg()
+```
 
 ### Arguements of the `PoolOfQueries` object
 
