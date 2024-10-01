@@ -4,7 +4,7 @@
 
 We came up with the agentic parts of the project while the non-agentic parts of this work is mostly based on [this paper](https://arxiv.org/pdf/2407.01219) by Fudan university.
 
-For more detailed info, please read the release blog (WIP)
+For more detailed info, please read the [release blog](https://shivvor2.substack.com/p/building-a-multiround-multihop-rag)
 
 ## Usage
 
